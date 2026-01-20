@@ -26,7 +26,7 @@ jobs:
         run: cd site; zip ../site.zip *;
 
       - name: Deploy to aws EB
-        uses: Abdi-SalamIb/beanstalk-deploy@v21
+        uses: Abdi-SalamIb/CalculatorAPI@21
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID}}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
