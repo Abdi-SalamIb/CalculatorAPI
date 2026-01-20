@@ -1,5 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
+builder.WebHost.UseUrls("http://0.0.0.0:5000");
 
 app.MapGet("/", () => "Hello World!");
 app.MapGet("/add", (int num1, int num2) => AddNumbers(num1, num2));
